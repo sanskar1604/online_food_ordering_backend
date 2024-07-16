@@ -25,7 +25,7 @@ public class CustomerUserDetailsService implements UserDetailsService {
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		// TODO Auto-generated method stub
 		User user = userRepository.findByEmail(username);
-		if(user != null) {
+		if(user == null) {
 			throw new UsernameNotFoundException("username name not found with email "+username);
 		}
 		USER_ROLE role = user.getRole();

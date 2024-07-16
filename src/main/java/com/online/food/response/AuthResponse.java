@@ -4,7 +4,6 @@ import com.online.food.model.USER_ROLE;
 
 import jakarta.persistence.Entity;
 
-@Entity
 public class AuthResponse {
 	private String jwt;
 	private String message;
