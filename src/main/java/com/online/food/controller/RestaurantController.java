@@ -32,12 +32,12 @@ public class RestaurantController {
 	@Autowired
 	private UserService userService;
 	
-	@GetMapping("/search")
-	private ResponseEntity<List<Restaurant>> SearchRestaurant(@RequestHeader("Authorization") String jwt, @RequestParam String keyword) throws Exception{
-		User user = userService.findUserByJwtToken(jwt);
-		List<Restaurant> restaurant = restaurantService.searchRestaurant(keyword);
-		return new ResponseEntity<>(restaurant, HttpStatus.OK);
-	}
+//	@GetMapping("/search")
+//	private ResponseEntity<List<Restaurant>> SearchRestaurant(@RequestHeader("Authorization") String jwt, @RequestParam String keyword) throws Exception{
+//		User user = userService.findUserByJwtToken(jwt);
+//		List<Restaurant> restaurant = restaurantService.searchRestaurant(keyword);
+//		return new ResponseEntity<>(restaurant, HttpStatus.OK);
+//	}
 	
 	@GetMapping("")
 	private ResponseEntity<List<Restaurant>> getAllRestaurant(@RequestHeader("Authorization") String jwt) throws Exception{

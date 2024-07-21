@@ -9,7 +9,8 @@ import com.online.food.model.Restaurant;
 
 public interface RestaurantRepository extends JpaRepository<Restaurant, Long> {
 
-	@Query("SELECT r FROM RESTAURANT r WHERE lower(r.name) like lower(concat('%',:query, '%')) OR lower(r.cuisineType) LIKE lower(concat('%',:query, '%'))")
-	List<Restaurant> findBySearchQuery(String query);
+//	@Query("SELECT r FROM RESTAURANT r WHERE lower(r.name) like lower(concat('%',:keyword,'%')) OR lower(r.cusineType) LIKE lower(concat('%',:query, '%'))")
+//	List<Restaurant> findBySearchQuery(String query);
+	
 	Restaurant findByOwnerId(Long userId);
 }
