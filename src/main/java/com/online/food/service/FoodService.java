@@ -15,7 +15,7 @@ public interface FoodService {
 	
 	public List<Food> getRestaurantsFood(Long restaurantId, boolean isVegetarian, boolean isNonveg, boolean isSeasonal, String foodCategory);
 	
-	public List<Food> searchFood(String keyword);
+//	public List<Food> searchFood(String keyword);
 	
 	public Food findFoodById(Long foodId) throws Exception;
 	
