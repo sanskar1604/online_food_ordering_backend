@@ -41,7 +41,7 @@ public class Order {
 //	private Payment payment;
 	
 	private int totalItem;
-	private int totalPrice;
+	private Long totalPrice;
 	
 	public Order() {
 		super();
@@ -135,11 +135,11 @@ public class Order {
 		this.totalItem = totalItem;
 	}
 
-	public int getTotalPrice() {
+	public Long getTotalPrice() {
 		return totalPrice;
 	}
 
-	public void setTotalPrice(int totalPrice) {
+	public void setTotalPrice(Long totalPrice) {
 		this.totalPrice = totalPrice;
 	}
 	
